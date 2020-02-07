@@ -1,0 +1,178 @@
+/*공통 css*/
+*{
+	margin: 0; padding: 0;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+ul, li{list-style: none; margin-bottom: 0!important;}
+a{text-decoration: none;}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/*header css*/
+.header{
+	height: 100px;
+	line-height: 100px;
+	background: #000;
+}
+.header .hidden{
+	display: none;
+}
+.header .header-container{
+	width: 868px; 
+	margin: 0 auto;
+}
+.header .logo{
+	display: inline-block;
+}
+.header .gnb{
+	float: right;
+}
+.header .gnb li{
+	float: left;
+	margin-right: 70px;
+}
+.header .gnb li:last-child{
+	margin-right: 0;
+}
+.header .gnb li a{
+	color: #fff; font-weight: 700
+}
+
+
+/*main css*/
+.main{
+	width: 868px;
+	margin: 80px auto 100px;
+}
+.main h1{
+	display: inline-block;
+	margin: 0 10px 15px 0;
+	font-size: 2.5rem;
+}
+.main > .pro-img{
+	margin: 40px 0 0 0;
+	text-align: center;
+}
+
+/*제품소개 css*/
+.main .jumbotron{
+	padding: 0; margin: 50px 0 60px;
+	background: #fff;
+}
+.main .jumbotron p{
+	line-height: 34px;
+}
+.main .jumbotron span{
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+/*주문하기 폼 css*/
+.main .order{
+	margin: 0 10px 22px 0;
+}
+.main .form-group{
+	margin-bottom: 0.75rem;
+}
+.main .form-group label{
+	width: 115px;
+	font-size: 1.1rem;
+}
+.main .form-group input{
+	display: inline-block;
+	width: calc(100% - 120px);
+	font-size: 1.1rem;
+}
+.main .form-group select{
+	display: inline-block;
+	width: calc(100% - 120px);
+	font-size: 1.1rem;
+}
+.main button{
+	display: block;
+	width: 300px; height: 50px;
+	margin: 50px auto 0;
+	background: #6f2d91;
+	border-color: #6f2d91;
+}
+.main button:hover{
+	background: #9981bb;
+	border-color: #9981bb;
+}
+/*테이블 css*/
+table{
+	table-layout: fixed;
+	width: 868px;
+	margin: 80px auto 0;
+}
+table .col01{
+	width: 20%;
+}
+table .col02{
+	width: 15%;
+}
+table .col03{
+	width: 35%;
+}
+table .col04{
+	width: 30%;
+}
+table thead tr{
+	height: 40px;
+	border-top: 1px solid #ced4da;
+	border-bottom: 2px solid #ced4da;
+}
+table tbody tr{
+	height: 40px;
+	border-bottom: 1px solid #ced4da;
+}
+table th, td{
+	padding: 0 0 0 15px;
+}
+
+
+/*footer css*/
+.footer{
+	padding: 45px 0;
+	background: #000;
+}
+.footer .hidden{
+	display: none;
+}
+.footer .footer-container{
+	width: 868px; 
+	margin: 0 auto;
+}
+.footer .logo{
+	display: inline-block;
+}
+.footer .gnb{
+	float: right;
+}
+.footer .gnb li{
+	float: left;
+	margin-right: 40px;
+}
+.footer .gnb li:last-child{
+	margin-right: 0;
+}
+.footer .gnb li a{
+	color: #fff; 
+	font-size: 14px;
+}
+.footer .gnb li .pp-txt{
+	font-weight: 700;	
+}
+.footer address{
+	margin: 45px 0 0 0;
+    color: #9b9b9b;
+}
+.footer p{
+	margin: 5px 0 0 0;
+    color: #9b9b9b;
+}
