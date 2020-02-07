@@ -24,7 +24,6 @@ for music in musics:
     image = music.select_one('img').attrs['src'].replace('//', '')
     title = music.select_one('td.info > a.title').text.strip()
     artist = music.select_one('td.info > a.artist ').text
-    print(rank,image,title,artist)
     music_data = {
         'rank': rank,
         'image': image,
