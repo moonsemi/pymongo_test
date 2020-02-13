@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="66f9e3b0-894e-4ba8-aa2d-f1255c536133" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_scrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_scrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -21,28 +22,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XLAhvqUW6zBZ5aFqR1LVxKP3vb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Settings.Markdown" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\문세미\Desktop\sparta\pymongo_test\templates" />
       <recent name="C:\Users\문세미\Desktop\sparta\pymongo_test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\문세미\Desktop\sparta\pymongo_test\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.music_scrapping">
-    <configuration name="find_movie" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.shoppingmal_falsk">
+    <configuration name="post_flask" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pymongo_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -54,7 +60,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_movie.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/post_flask.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -63,7 +69,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="flask_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="selenium_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pymongo_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,7 +81,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/selenium_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +90,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mongo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="selenium_test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pymongo_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,7 +102,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mongo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/selenium_test2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="music_scrapping" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="shoppingmal_falsk" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pymongo_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,7 +123,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/music_scrapping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shoppingmal_falsk.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +132,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scrapping" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pymongo_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,7 +144,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.music_scrapping" />
-        <item itemvalue="Python.flask_test" />
-        <item itemvalue="Python.find_movie" />
-        <item itemvalue="Python.scrapping" />
-        <item itemvalue="Python.mongo" />
+        <item itemvalue="Python.shoppingmal_falsk" />
+        <item itemvalue="Python.post_flask" />
+        <item itemvalue="Python.selenium_test2" />
+        <item itemvalue="Python.selenium_test" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -183,46 +189,54 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1187" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581315831861">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1187" y="340" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581315831861" />
     <state x="1150" y="226" width="534" height="595" key="#xdebugger.evaluate" timestamp="1580996519876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1150" y="226" width="534" height="595" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1580996519876" />
-    <state width="1078" height="269" key="GridCell.Tab.0.bottom" timestamp="1581059032928">
+    <state x="993" y="269" key="FileChooserDialogImpl" timestamp="1581408271462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1078" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581059032928" />
-    <state width="1078" height="269" key="GridCell.Tab.0.center" timestamp="1581059032928">
+    <state x="993" y="269" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581408271462" />
+    <state width="1094" height="190" key="GridCell.Tab.0.bottom" timestamp="1581577705876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1078" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581059032928" />
-    <state width="1078" height="269" key="GridCell.Tab.0.left" timestamp="1581059032928">
+    <state width="1094" height="190" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581577705876" />
+    <state width="1094" height="190" key="GridCell.Tab.0.center" timestamp="1581577705876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1078" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581059032928" />
-    <state width="1078" height="269" key="GridCell.Tab.0.right" timestamp="1581059032928">
+    <state width="1094" height="190" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581577705876" />
+    <state width="1094" height="190" key="GridCell.Tab.0.left" timestamp="1581577705875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1078" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581059032928" />
-    <state width="1259" height="347" key="GridCell.Tab.1.bottom" timestamp="1580996542357">
+    <state width="1094" height="190" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581577705875" />
+    <state width="1094" height="190" key="GridCell.Tab.0.right" timestamp="1581577705876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1259" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580996542357" />
-    <state width="1259" height="347" key="GridCell.Tab.1.center" timestamp="1580996542357">
+    <state width="1094" height="190" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581577705876" />
+    <state width="1322" height="332" key="GridCell.Tab.1.bottom" timestamp="1581414353874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1259" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580996542357" />
-    <state width="1259" height="347" key="GridCell.Tab.1.left" timestamp="1580996542357">
+    <state width="1322" height="332" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581414353874" />
+    <state width="1322" height="332" key="GridCell.Tab.1.center" timestamp="1581414353874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1259" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580996542357" />
-    <state width="1259" height="347" key="GridCell.Tab.1.right" timestamp="1580996542357">
+    <state width="1322" height="332" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581414353874" />
+    <state width="1322" height="332" key="GridCell.Tab.1.left" timestamp="1581414353874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1259" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580996542357" />
-    <state x="704" y="206" key="SettingsEditor" timestamp="1580987661804">
+    <state width="1322" height="332" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581414353874" />
+    <state width="1322" height="332" key="GridCell.Tab.1.right" timestamp="1581414353874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="704" y="206" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580987661804" />
+    <state width="1322" height="332" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581414353874" />
+    <state x="704" y="206" key="SettingsEditor" timestamp="1581315970269">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="704" y="206" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581315970269" />
     <state width="520" height="523" key="XDebugger.FullValuePopup" timestamp="1580995318959">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -231,6 +245,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1107" y="120" width="613" height="807" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580990961844" />
+    <state x="1303" y="339" width="672" height="678" key="search.everywhere.popup" timestamp="1581413997854">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1303" y="339" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581413997854" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -239,6 +257,21 @@
           <url>file://$PROJECT_DIR$/flask_test.py</url>
           <line>35</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/flask_test.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/post_flask.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/shoppingmal_falsk.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

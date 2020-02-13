@@ -19,12 +19,28 @@
           //           console.log(response)
           //       }
           //   })
+          // $.ajax({
+          //   type: "POST",
+          //   url: "/new",
+          //   data: { rank_give:'99', star_give:'5', title_give:'청년경찰' },
+          //   success: function(response){
+          //       console.log(response)
+          //   }
+          // })
+          // $.ajax({
+          //   type: "POST",
+          //   url: "/post",
+          //   data: {url_give:'https://platum.kr/archives/127938',comment_give:'코멘트'},
+          //   success: function(response){
+          //     console.log(response)
+          //   }
+          // })
           $.ajax({
-            type: "POST",
-            url: "/new",
-            data: { rank_give:'99', star_give:'5', title_give:'청년경찰' },
+            type: "GET",
+            url: "/post",
+            data: {},
             success: function(response){
-                console.log(response)
+               console.log(response)
             }
           })
         }

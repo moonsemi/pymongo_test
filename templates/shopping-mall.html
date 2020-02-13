@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>shopping mall</title>
+	<!-- My Work CSS -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- web-font CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<!-- JQuery를 import 합니다 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#order_table').html('');
+			listing();
+		});
+
+		function listing() {
+			// ajax 코드
+			$.ajax({
+				type: "GET",
+				url: "/order",
+				data: {},
+				success: function(response){
+					if (response['result'] == 'success') {
+						let all_orders = response['all_orders'];
+						console.log(all_orders);
+						for (let i = 0; i < all_orders.length; i++) {
+							order_list(all_orders[i]['name'],all_orders[i]['count'],all_orders[i]['addr'],all_orders[i]['tel'])
+						}
+					} else {
+						alert('기사를 받아오지 못했습니다');
+					}
+				}
+			})
+		}
+
+		function order_list(name,count,addr,tel) {
+			let table_tamp = '<tr>\
+								<td>' + name + '</td>\
+								<td>' + count + '</td>\
+								<td>' + addr + '</td>\
+								<td>' + tel + '</td>\
+							</tr>';
+			$('#order_table').append(table_tamp);
+		}
+
+		function order() {
+			let name = $('#exampleInputName').val();
+			let count = $('#exampleFormControlSelect1').val();
+			let addr = $('#exampleInputAddr').val();
+			let tel = $('#exampleInputTel').val();
+			let regExp = /^01([0|1|6|7|8|9]?)?([0-9]{3,4})?([0-9]{4})$/;
+			
+			if(name ==''){
+				alert('성함을 입력해주세요!');
+				$('#exampleInputName').focus();
+				return false;
+			}else if(count ==''){
+				alert('수량을 입력해주세요!');
+				$('#exampleFormControlSelect1').focus();
+				return false;
+			}else if(addr ==''){
+				alert('주소를 입력해주세요!');
+				$('#exampleInputAddr').focus();
+				return false;
+			}else if(tel ==''){
+				alert('전화번호를 입력해주세요!');
+				$('#exampleInputTel').focus();
+				return false;
+			}else if(!regExp.test(tel)){
+				alert("잘못된 휴대폰 번호입니다. 숫자, -를 제외한 숫자만 입력하세요.");
+				return false;
+			}
+
+			$.ajax({
+				type: "POST",
+				url: "/order",
+				data: {name_give:name, count_give:count, addr_give:addr, tel_give:tel},
+				success: function(response){
+					if (response['result'] == 'success') {
+						alert('주문이 완료되었습니다!')
+						window.location.reload();
+					}
+				}
+			})
+		}
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<div class="header-container">
+				<h1 class="hidden">Lush</h1>
+				<div class="logo"><a href="javascript:;"><img src="{{ url_for('static', filename='images/logo.png') }}"></a></div>
+				<ul class="gnb clearfix">
+					<li><a href="javascript:;">제품</a></li>
+					<li><a href="javascript:;">브랜드</a></li>
+					<li><a href="javascript:;">매장</a></li>
+					<li><a href="javascript:;">스파</a></li>
+					<li><a href="javascript:;">이벤트</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="main">
+			<div class="pro-img"><img src="{{ url_for('static', filename='images/product-img01.png') }}" alt="상품이미지01"></div>
+			<div class="pro-img"><img src="{{ url_for('static', filename='images/product-img02.png') }}" alt="상품이미지02"></div>
+			<div class="jumbotron">
+				<h1 class="display-4">릴렉스</h1>
+				<span>가격 : 49,000</span>
+				<span class="badge badge-secondary">Best</span>
+				<p class="lead">
+					마음을 편안하게 가다듬고, 라벤더 향기에 집중해보세요. <br>
+					하늘에 떠 있는 기분, 느껴지시나요? <br>
+					3개의 제품이 기프트에 있습니다.
+				</p>
+			</div>
+			<h1 class="display-4 order">주문하기</h1>
+			<form id="form-container">
+				<div class="form-group">
+					<label for="exampleInputName">주문자 성함 :</label>
+					<input type="text" class="form-control" id="exampleInputName" aria-describedby="basic-addon1">
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlSelect1">수량 :</label>
+					<select class="form-control" id="exampleFormControlSelect1">
+						<option value="">--- 수량을 선택하세요 ---</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputAddr">주소 :</label>
+					<input type="text" class="form-control" id="exampleInputAddr" aria-describedby="basic-addon1">
+				</div>			
+				<div class="form-group">
+					<label for="exampleInputTel">전화번호 :</label>
+					<input type="text" class="form-control" id="exampleInputTel" placeholder="'-'를 제외하고 적어주세요." aria-describedby="basic-addon1">
+				</div>
+				<button type="button" onclick="order()" class="btn btn-primary">주문하기</button>
+			</form>
+			<table>
+				<colgroup>
+					<col class="col01">
+					<col class="col02">
+					<col class="col03">
+					<col class="col04">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>이름</th>
+						<th>수량</th>
+						<th>주소</th>
+						<th>전화번호</th>
+					</tr>
+				</thead>
+				<tbody id="order_table">
+				</tbody>
+			</table>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-container">
+				<h1 class="hidden">Lush</h1>
+				<div class="logo"><a href="javascript:;"><img src="{{ url_for('static', filename='images/logo.png') }}"></a></div>
+				<ul class="gnb clearfix">
+					<li><a href="javascript:;">스카우트</a></li>
+					<li><a href="javascript:;">회사소개</a></li>
+					<li><a class="pp-txt" href="javascript:;">개인정보처리방침</a></li>
+					<li><a href="javascript:;">이용약관</a></li>
+					<li><a href="javascript:;">고객센터</a></li>
+				</ul>
+				<address>서울시 서초구 서운로 138(서초동아타워)6층</address>
+				<p class="copy">Copyright ⓒ LUSHKOREA co.,Ltd. All Rights Reserved.</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
